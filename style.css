@@ -9,13 +9,16 @@
 
     --red: #e51937;
 
-    --cream: #f7f7f2;
+    /* New neutral background */
+    --page-bg: #eeece6;
+
+    --cream: #f8f8f3;
     --white: #ffffff;
 
     --text: #102019;
     --muted: #718078;
 
-    --border: #dce3de;
+    --border: #d9ddd7;
 }
 
 
@@ -39,7 +42,8 @@ body {
 
     padding: 25px;
 
-    background: #000000;
+    /* Soft warm grey / ivory */
+    background: var(--page-bg);
 
     font-family:
         Arial,
@@ -92,7 +96,8 @@ body {
 
 
 .brand-info h1 {
-    color: white;
+    /* BLACK CAPTION */
+    color: #000000;
 
     font-size: 23px;
     font-weight: 800;
@@ -106,7 +111,7 @@ body {
 .brand-info p {
     margin-top: 5px;
 
-    color: #8d9993;
+    color: #303630;
 
     font-size: 9px;
     font-weight: 700;
@@ -131,8 +136,8 @@ body {
     padding: 18px;
 
     box-shadow:
-        0 20px 50px rgba(0, 0, 0, 0.45),
-        0 8px 25px rgba(0, 61, 36, 0.15);
+        0 18px 40px rgba(0, 0, 0, 0.10),
+        0 4px 12px rgba(0, 61, 36, 0.08);
 }
 
 
@@ -314,110 +319,4 @@ body {
 
 
 /* =========================================
-   FOOTER
-   ========================================= */
-
-.calculator-footer {
-    display: flex;
-
-    align-items: center;
-    justify-content: space-between;
-
-    margin-top: 14px;
-
-    padding: 0 4px;
-
-    color: var(--muted);
-
-    font-size: 9px;
-    font-weight: 700;
-
-    letter-spacing: 1.5px;
-
-    text-transform: uppercase;
-}
-
-
-.status-dot {
-    width: 7px;
-    height: 7px;
-
-    display: inline-block;
-
-    margin-right: 6px;
-
-    border-radius: 50%;
-
-    background: var(--red);
-}
-
-
-/* =========================================
-   MOBILE
-   ========================================= */
-
-@media (max-width: 430px) {
-
-    body {
-        padding: 18px;
-    }
-
-    .calculator {
-        padding: 14px;
-
-        border-radius: 24px;
-    }
-
-    .buttons {
-        gap: 8px;
-    }
-
-    .button {
-        min-height: 56px;
-
-        border-radius: 15px;
-
-        font-size: 19px;
-    }
-
-    .result {
-        font-size: 37px;
-    }
-
-    .logo {
-        width: 55px;
-        height: 55px;
-    }
-
-    .brand-info h1 {
-        font-size: 21px;
-    }
-}
-
-
-@media (max-width: 340px) {
-
-    body {
-        padding: 12px;
-    }
-
-    .buttons {
-        gap: 6px;
-    }
-
-    .button {
-        min-height: 52px;
-
-        border-radius: 13px;
-
-        font-size: 18px;
-    }
-
-    .calculator {
-        padding: 12px;
-    }
-
-    .result {
-        font-size: 33px;
-    }
-}
+   FOOT
